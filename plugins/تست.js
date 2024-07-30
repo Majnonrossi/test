@@ -6,7 +6,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
   try {
     m.reply('*الرجاء الانتظار، جاري إنشاء الصور...*');
 
-    const endpoint = `https://api.bk9.site/ai/photoleap?q=${encodeURIComponent(text)}`;
+    const endpoint = `https://bk9.fun/ai/photoleap?q=Boy}`;
     const response = await fetch(endpoint);
 
     if (response.ok) {
