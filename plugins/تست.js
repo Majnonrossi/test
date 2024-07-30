@@ -19,5 +19,5 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
 
 handler.help = ['photoleap'];
 handler.tags = ['drawing'];
-handler.command = ['photoleap'];
+handler.command = ['p0'];
 export default handler;
