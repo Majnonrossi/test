@@ -10,7 +10,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
     const response = await fetch(endpoint);
 
     if (response.ok) {
-      const imageBuffer = await response.buffer();
+      const imageBuffer = await response.BK9.buffer();
       await conn.sendFile(m.chat, imageBuffer, 'image.png', null, m);
     } else {
       throw '*فشل إنشاء الصورة*';
@@ -22,5 +22,5 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
 
 handler.help = ['photoleap'];
 handler.tags = ['drawing'];
-handler.command = ['ph'];
+handler.command = ['phot'];
 export default handler;
